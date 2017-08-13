@@ -1,0 +1,18 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+body {
+  font-family: Helvetica;
+  width: 100%;
+}
+.main-container {
+  width: 960px;
+  margin: 0 auto;
+}
+#hero {
+  background-image: url("glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
