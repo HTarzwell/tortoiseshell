@@ -47,6 +47,9 @@ body {
   text-decoration: none;
   padding-left: 2rem;
 }
+.small {
+  display: none;
+}
 .tag-banner {
   background-color: white;
   padding: 1.5rem 5rem;
@@ -62,7 +65,8 @@ body {
 /** Main Body styling **/
 .services {
   display: flex;
-  padding: 3rem 0;
+  align-items: center;
+  justify-content: space-around;
 }
 .service-items {
   display: flex;
@@ -70,7 +74,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 8rem;
-  padding-left: 6rem;
+  padding: 3rem;
 }
 .service-items img {
   width: 5rem;
@@ -103,7 +107,7 @@ body {
   line-height: 1.4;
 }
 /** Footer Styling **/
-#footer {
+footer {
   background-color: azure;
   padding: 4rem;
 }
@@ -113,8 +117,79 @@ body {
 }
 /** TABLET STYLING **/
 @media only screen and (max-width: 768px) {
+	.main-container {
+	width: 100%;
+	}
+	#hero {
+	height: 22rem;
+	padding-top: 0;
+	}
+	.tag-banner {
+	padding: 0.75rem 4rem;
+	margin-top: 5rem;
+	margin-right: 2rem;
+	}
+.tagline {
+  font-size: 1.33rem;
 }
 
 /** PHONE STYLING **/
 @media only screen and (max-width: 480px) {
+	#hero {
+		height: 17rem;
+		background-position: 20%;
+}
+.title {
+  display: none;
+}
+.full {
+  display: none;
+}
+.small {
+  display: initial;
+}
+.tag-banner {
+  padding: 1rem 0;
+  margin-top: 9rem;
+  width: 100%;
+  float: none;
+}
+.tagline {
+  font-size: 1rem;
+  text-align: center;
+}
+/** Main Body styling **/
+.services {
+  flex-direction: column;
+  padding: 3.77rem 0;
+}
+.service-items {
+  padding: 1.54rem;
+}
+.service-items h4 {
+  font-size: 0.77rem;
+}
+#exams img {
+  width: 3.5rem;
+}
+.info {
+  padding-bottom: 0;
+  flex-direction: column;
+}
+.info-item {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+.info-item h2 {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.info-item p {
+  font-size: 0.77rem;
+}
+/** Footer Styling **/
+.copyright-logo {
+  justify-content: center;
+}
 }
